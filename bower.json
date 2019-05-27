@@ -1,0 +1,17 @@
+{
+  "name": "banner-sdk",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Nelson Tan <ntan@bmgww.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
