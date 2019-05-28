@@ -4,7 +4,7 @@ env:
   global:
   - GH_USER: nelson119
 node_js:
-- '8.0.0'
+- '10.0.0'
 install:
 - travis_retry npm i -g yarn 
 - travis_retry yarn global add gulp bower 
