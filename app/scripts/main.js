@@ -63,7 +63,7 @@
         var event; // The custom event that will be created
 
         if (document.createEvent) {
-            event = document.createEvent("HTMLEvents");
+            event = document.createEvent('HTMLEvents');
             event.initEvent(name, true, true);
         } else {
             event = document.createEventObject();
@@ -75,7 +75,7 @@
             if (document.createEvent) {
                 elem.dispatchEvent(event);
             } else {
-                elem.fireEvent("on" + event.eventType, event);
+                elem.fireEvent('on' + event.eventType, event);
             }
         };
         return event;

@@ -1,0 +1,97 @@
+Arguments: 
+  /Users/nelson/.nvm/versions/node/v8.0.0/bin/node /Users/nelson/.nvm/versions/node/v8.0.0/bin/yarn add gulp
+
+PATH: 
+  /Users/nelson/.nvm/versions/node/v8.0.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.0.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "private": true,
+    "engines": {
+      "node": ">=4"
+    },
+    "dependencies": {
+      "jquery": "^3.3.1"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.1.2",
+      "@babel/preset-env": "^7.1.0",
+      "autoprefixer": "^9.4.4",
+      "browser-sync": "^2.2.1",
+      "cross-env": "^5.2.0",
+      "cssnano": "^4.1.7",
+      "del": "^3.0.0",
+      "gulp": "^4.0.0",
+      "gulp-babel": "^8.0.0",
+      "gulp-cli": "^2.0.1",
+      "gulp-eslint": "^5.0.0",
+      "gulp-htmlmin": "^5.0.1",
+      "gulp-if": "^2.0.2",
+      "gulp-imagemin": "^5.0.3",
+      "gulp-load-plugins": "^1.2.4",
+      "gulp-plumber": "^1.0.1",
+      "gulp-postcss": "^8.0.0",
+      "gulp-size": "^3.0.0",
+      "gulp-sourcemaps": "^2.2.0",
+      "gulp-uglify": "^3.0.1",
+      "gulp-useref": "^3.0.0",
+      "mocha": "^5.2.0",
+      "yargs": "12.0.5"
+    },
+    "scripts": {
+      "serve:test": "cross-env NODE_ENV=test gulp serve",
+      "serve:dist": "cross-env NODE_ENV=production gulp serve",
+      "start": "gulp serve",
+      "build": "cross-env NODE_ENV=production gulp",
+      "test": "npm run serve:test",
+      "tasks": "gulp --tasks"
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ],
+    "eslintConfig": {
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "env": {
+        "es6": true,
+        "node": true,
+        "browser": true,
+        "jquery": true
+      },
+      "rules": {
+        "quotes": [
+          2,
+          "single"
+        ]
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/Users/nelson/.nvm/versions/node/v8.0.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at checkOne (/Users/nelson/.nvm/versions/node/v8.0.0/lib/node_modules/yarn/lib/cli.js:62444:11)
+      at Object.check (/Users/nelson/.nvm/versions/node/v8.0.0/lib/node_modules/yarn/lib/cli.js:62463:5)
+      at /Users/nelson/.nvm/versions/node/v8.0.0/lib/node_modules/yarn/lib/cli.js:22803:73
+      at Generator.next (<anonymous>)
+      at step (/Users/nelson/.nvm/versions/node/v8.0.0/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /Users/nelson/.nvm/versions/node/v8.0.0/lib/node_modules/yarn/lib/cli.js:109:13
+      at <anonymous>
