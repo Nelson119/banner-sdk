@@ -1,0 +1,25 @@
+    
+language: node_js
+env:
+  global:
+  - GH_USER: nelson119
+node_js:
+- '8.0.0'
+install:
+- travis_retry npm i -g yarn 
+- travis_retry yarn global add gulp bower 
+- travis_retry yarn
+- gulp build
+- mkdir out
+- cd out
+- git init
+- git config user.name nelson119
+- git config user.email nelson119@outlook.com
+- git remote add origin $GH_REF
+- git fetch
+- git checkout -b gh-pages
+- cp -r ../dist/* ./
+- git add .
+- git commit -m "Deployed to Github Pages"
+- git push --quiet -f origin gh-pages
+- cd ../
