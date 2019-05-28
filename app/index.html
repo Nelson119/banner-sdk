@@ -26,15 +26,15 @@
       <div class="row">
         <h3>video</h3>
         <div class="col-md-10 col-md-offset-1">
-          <div id="banner1" data-ba-type="video" data-ba-id="banner1001"></div>
+          <div on-ad-impression="console.log('1')" id="banner1" data-ba-type="video" data-ba-id="banner1001" data-ba-client-id="12445"></div>
         </div>
         <h3>banner</h3>
         <div class="col-md-10 col-md-offset-1">
-          <div id="banner2" data-ba-type="banner" data-ba-id="banner1001"></div>
+          <div id="banner2" data-ba-type="banner" data-ba-id="banner1002" data-ba-client-id="12445"></div>
         </div>
         <h3>non</h3>
         <div class="col-md-10 col-md-offset-1">
-          <div id="banner3" data-ba-type="" data-ba-id="banner1001"></div>
+          <div id="banner3" on-ad-failed="console.error('failed')" data-ba-type="" data-ba-id="banner1003" data-ba-client-id="12445"></div>
         </div>
       </div>
     </div>
@@ -42,5 +42,10 @@
     <!-- <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      BROADCAST.init();
+      console.log(BROADCAST.banners);
+    </script>
   </body>
 </html>
